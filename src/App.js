@@ -7,7 +7,6 @@ import Header from './components/Header';
 const App = () => (
   <main>
     <Header />
-    <h1>Welcome to BooksLog!</h1>
     <Routes>
       <Route index element={<BooksPage />} />
       <Route path="categories" element={<CategoriesPage />} />
