@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Book from './Book';
-import Button from './Button';
 
 const BooksList = (props) => {
   const { books } = props;
@@ -12,7 +11,6 @@ const BooksList = (props) => {
     return (
       <li key={id}>
         <Book bookInfo={book} />
-        <Button text="Remove" />
       </li>
     );
   });
