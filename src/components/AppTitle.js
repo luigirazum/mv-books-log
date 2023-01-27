@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const AppTitle = () => (
   <nav>
-    <Link to="/" end="true">BooksLog</Link>
+    <Link to="/" end="true">BooksLog CMS</Link>
   </nav>
 );
 
