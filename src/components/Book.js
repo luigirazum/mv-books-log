@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Book = (props) => {
-  const { title, author } = props;
+  const { book: { title, author } } = props;
 
   return (
     <div>
@@ -13,13 +13,17 @@ const Book = (props) => {
 };
 
 Book.propTypes = {
-  title: PropTypes.string,
-  author: PropTypes.string,
+  book: PropTypes.exact({
+    title: PropTypes.string,
+    author: PropTypes.string,
+  }),
 };
 
 Book.defaultProps = {
-  title: 'The Book',
-  author: 'Author Name',
+  book: {
+    title: 'The Book',
+    author: 'Author Name',
+  },
 };
 
 export default Book;
