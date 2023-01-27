@@ -3,6 +3,7 @@ import NotFound from './pages/NotFound';
 import BooksPage from './pages/BooksPage';
 import CategoriesPage from './pages/CategoriesPage';
 import Header from './components/Header';
+import './assets/styles/App.css';
 
 const App = () => (
   <main>
