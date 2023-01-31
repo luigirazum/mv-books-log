@@ -14,12 +14,12 @@ const reducer = (state = [], action = {}) => {
         ...state,
         {
           id: state.length + 1,
-          ...action.book,
+          ...action.payload,
         },
       ];
     case REMOVE_BOOK:
       return state.filter(
-        (book) => book.id !== action.id,
+        (book) => book.id !== action.payload,
       );
     default:
       return state;
@@ -29,9 +29,15 @@ const reducer = (state = [], action = {}) => {
 /**
  * action creators for BOOKS
  */
-const addBook = () => ({ type: ADD_BOOK });
+const addBook = (book) => ({
+  type: ADD_BOOK,
+  payload: book,
+});
 
-const removeBook = () => ({ type: REMOVE_BOOK });
+const removeBook = (id) => ({
+  type: REMOVE_BOOK,
+  payload: id,
+});
 
 export { addBook, removeBook };
 export default reducer;
