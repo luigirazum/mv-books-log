@@ -4,12 +4,17 @@
 const CHECK_STATUS = 'bookslog/categories/CHECK_STATUS';
 
 /**
+ * initialState for CATEGORIES
+ */
+const initialState = [];
+
+/**
  * reducer for CATEGORIES
  */
-const reducer = (state = [], action = {}) => {
+const reducer = (state = initialState, action = {}) => {
   switch (action.type) {
     case CHECK_STATUS:
-      return 'Under construction';
+      return ('Under construction...');
     default:
       return state;
   }

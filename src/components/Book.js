@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Button from './Button';
+import { useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/books';
 
 const Book = (props) => {
-  const { book: { title, author } } = props;
+  const { bookInfo: { id, title, author } } = props;
+  const dispatch = useDispatch();
 
   return (
     <>
@@ -11,23 +13,22 @@ const Book = (props) => {
         <h2>{title}</h2>
         <h4>{author}</h4>
       </div>
-      <Button text="Remove" />
+      <button
+        type="button"
+        onClick={() => dispatch(removeBook(id))}
+      >
+        Remove
+      </button>
     </>
   );
 };
 
 Book.propTypes = {
-  book: PropTypes.exact({
+  bookInfo: PropTypes.exact({
+    id: PropTypes.string,
     title: PropTypes.string,
     author: PropTypes.string,
-  }),
-};
-
-Book.defaultProps = {
-  book: {
-    title: 'The Book',
-    author: 'Author Name',
-  },
+  }).isRequired,
 };
 
 export default Book;
