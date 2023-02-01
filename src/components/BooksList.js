@@ -1,16 +1,16 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 import Book from './Book';
 
-const BooksList = (props) => {
-  const { books } = props;
+const BooksList = () => {
+  const books = useSelector((state) => (state.books));
 
   const bookList = books.map((book) => {
-    const { id } = book;
+    const { id, ...info } = book;
 
     return (
       <li key={id}>
-        <Book bookInfo={book} />
+        <Book bookInfo={info} />
       </li>
     );
   });
@@ -20,26 +20,6 @@ const BooksList = (props) => {
       {bookList}
     </ul>
   );
-};
-
-BooksList.propTypes = {
-  books: PropTypes.arrayOf(
-    PropTypes.exact({
-      id: PropTypes.number,
-      title: PropTypes.string,
-      author: PropTypes.string,
-    }),
-  ),
-};
-
-BooksList.defaultProps = {
-  books: [
-    { id: 1, title: 'Book One', author: 'First Author' },
-    { id: 2, title: 'Book Two', author: 'Second Author' },
-    { id: 3, title: 'Book Three', author: 'Third Author' },
-    { id: 4, title: 'Book Four', author: 'Fourth Author' },
-    { id: 5, title: 'Book Five', author: 'Fifth Author' },
-  ],
 };
 
 export default BooksList;
