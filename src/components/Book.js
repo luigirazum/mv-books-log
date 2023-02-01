@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Button from './Button';
 
 const Book = (props) => {
-  const { book: { title, author } } = props;
+  const { bookInfo: { title, author } } = props;
 
   return (
     <>
@@ -17,17 +17,10 @@ const Book = (props) => {
 };
 
 Book.propTypes = {
-  book: PropTypes.exact({
+  bookInfo: PropTypes.exact({
     title: PropTypes.string,
     author: PropTypes.string,
-  }),
-};
-
-Book.defaultProps = {
-  book: {
-    title: 'The Book',
-    author: 'Author Name',
-  },
+  }).isRequired,
 };
 
 export default Book;
