@@ -1,6 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
-import { Provider } from 'react-redux';
-import store from './redux/storeConfig';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NotFound from './pages/NotFound';
 import BooksPage from './pages/BooksPage';
 import CategoriesPage from './pages/CategoriesPage';
@@ -8,7 +6,7 @@ import Header from './components/Header';
 import './assets/styles/App.css';
 
 const App = () => (
-  <Provider store={store}>
+  <BrowserRouter>
     <main>
       <Header />
       <Routes>
@@ -17,7 +15,7 @@ const App = () => (
         <Route path="*" element={<NotFound />} />
       </Routes>
     </main>
-  </Provider>
+  </BrowserRouter>
 );
 
 export default App;
