@@ -6,11 +6,11 @@ const BooksList = () => {
   const books = useSelector((state) => (state.books));
 
   const bookList = books.map((book) => {
-    const { id, ...info } = book;
+    const { id } = book;
 
     return (
       <li key={id}>
-        <Book bookInfo={info} />
+        <Book bookInfo={book} />
       </li>
     );
   });
