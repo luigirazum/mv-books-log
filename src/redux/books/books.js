@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid';
+
 /**
  * action types for BOOKS
  */
@@ -8,11 +10,11 @@ const REMOVE_BOOK = 'bookslog/books/REMOVE_BOOK';
  * initialState for BOOKS
  */
 const initialState = [
-  { id: 1, title: 'React for Dummies', author: 'The Dummies' },
-  { id: 2, title: 'Redux for Dummies', author: 'The Redummies' },
-  { id: 3, title: 'React with Redux', author: 'The Juniors' },
-  { id: 4, title: 'Reduxing with Hooks', author: 'Hookers Team' },
-  { id: 5, title: 'Reduxed APIs', author: 'The Reduxers' },
+  { id: uuidv4(), title: 'React for Dummies', author: 'The Dummies' },
+  { id: uuidv4(), title: 'Redux for Dummies', author: 'The Redummies' },
+  { id: uuidv4(), title: 'React with Redux', author: 'The Juniors' },
+  { id: uuidv4(), title: 'Reduxing with Hooks', author: 'Hookers Team' },
+  { id: uuidv4(), title: 'Reduxed APIs', author: 'The Reduxers' },
 ];
 
 /**
@@ -24,7 +26,7 @@ const reducer = (state = initialState, action = {}) => {
       return [
         ...state,
         {
-          id: state.length + 1,
+          id: uuidv4(),
           ...action.payload,
         },
       ];
