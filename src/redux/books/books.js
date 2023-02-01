@@ -8,11 +8,11 @@ const REMOVE_BOOK = 'bookslog/books/REMOVE_BOOK';
  * initialState for BOOKS
  */
 const initialState = [
-  { id: 1, title: 'Book One', author: 'First Author' },
-  { id: 2, title: 'Book Two', author: 'Second Author' },
-  { id: 3, title: 'Book Three', author: 'Third Author' },
-  { id: 4, title: 'Book Four', author: 'Fourth Author' },
-  { id: 5, title: 'Book Five', author: 'Fifth Author' },
+  { id: 1, title: 'React for Dummies', author: 'The Dummies' },
+  { id: 2, title: 'Redux for Dummies', author: 'The Redummies' },
+  { id: 3, title: 'React with Redux', author: 'The Juniors' },
+  { id: 4, title: 'Reduxing with Hooks', author: 'Hookers Team' },
+  { id: 5, title: 'Reduxed APIs', author: 'The Reduxers' },
 ];
 
 /**
