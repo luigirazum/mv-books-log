@@ -3,6 +3,12 @@ import { v4 as uuidv4 } from 'uuid';
 /**
  * action types for BOOKS
  */
+// fetch actions
+const FETCH_BOOKS_BEGIN = 'FETCH_BOOKS_BEGIN';
+const FETCH_BOOKS_SUCCESS = 'FETCH_BOOKS_SUCCESS';
+const FETCH_BOOKS_FAIL = 'FETCH_BOOKS_FAIL';
+
+// non-fetch actions
 const ADD_BOOK = 'bookslog/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookslog/books/REMOVE_BOOK';
 
@@ -47,5 +53,23 @@ const removeBook = (id) => ({
   payload: id,
 });
 
+/**
+ * action creators for fetch BOOKS
+*/
+const fetchBooksBegin = () => ({
+  type: FETCH_BOOKS_BEGIN,
+});
+
+const fetchBooksSuccess = (books) => ({
+  type: FETCH_BOOKS_SUCCESS,
+  payload: { books },
+});
+
+const fetchBooksFail = (error) => ({
+  type: FETCH_BOOKS_FAIL,
+  payload: { error },
+});
+
 export { addBook, removeBook };
+export { fetchBooksBegin, fetchBooksSuccess, fetchBooksFail };
 export default reducer;
