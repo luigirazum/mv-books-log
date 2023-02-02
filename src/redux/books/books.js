@@ -9,38 +9,7 @@ const REMOVE_BOOK = 'bookslog/books/REMOVE_BOOK';
 /**
  * initialState for BOOKS
  */
-const initialState = [
-  {
-    id: uuidv4(),
-    title: 'React for Dummies',
-    author: 'The Dummies',
-    category: 'Book',
-  },
-  {
-    id: uuidv4(),
-    title: 'Redux for Dummies',
-    author: 'The Redummies',
-    category: 'Book',
-  },
-  {
-    id: uuidv4(),
-    title: 'React with Redux',
-    author: 'The Juniors',
-    category: 'Book',
-  },
-  {
-    id: uuidv4(),
-    title: 'Reduxing with Hooks',
-    author: 'Hookers Team',
-    category: 'Book',
-  },
-  {
-    id: uuidv4(),
-    title: 'Reduxed APIs',
-    author: 'The Reduxers',
-    category: 'Book',
-  },
-];
+const initialState = [];
 
 /**
  * reducer for BOOKS
