@@ -7,7 +7,7 @@
  *        << appId
  *    - /apps/appId/books
  *      >> GET to retrieve saved books
-    *     << array of objects
+ *       << array of objects
  *      >> POST body JSON with keys { item_id, title, author, category }
  *        << 201 status (created)
  *    - /apps/appId/books/itemId
@@ -23,4 +23,7 @@ const epApps = '/apps';
 const epBooks = `${epApps}/${appId}/books`;
 const epRemove = `${epBooks}/`;
 
+const headersList = { 'Content-Type': 'application/json' };
+
 export { baseUrl, epBooks, epRemove };
+export { headersList };
