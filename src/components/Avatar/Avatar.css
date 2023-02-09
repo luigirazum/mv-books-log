@@ -1,0 +1,19 @@
+.avatar {
+  color: var(--azure);
+  background-color: transparent;
+  padding: 0.875rem;
+  outline: none;
+  border: 1px solid #e8e8e8;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+span {
+  display: inline-block;
+  display: flex;
+}
+
+svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
