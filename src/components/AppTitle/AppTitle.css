@@ -1,0 +1,7 @@
+.appTitle {
+  font-family: var(--ff-montserrat);
+  font-weight: var(--fw-bold);
+  font-size: 1.875rem;
+  color: var(--azure);
+  text-decoration: none;
+}
