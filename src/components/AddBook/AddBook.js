@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/books';
+import { addBook } from '../../redux/books/books';
+import './AddBook.css';
 
 const AddBook = () => {
   const dispatch = useDispatch();
@@ -27,15 +28,16 @@ const AddBook = () => {
   };
 
   return (
-    <div>
-      <h2>Add New Book</h2>
+    <section className="addBook">
+      <h2 className="subtitle">Add New Book</h2>
 
-      <form onSubmit={submitHandler}>
+      <form onSubmit={submitHandler} className="newBook">
         <input
           type="text"
           placeholder="Book title"
           name="title"
           required
+          className="bookInput bookTitle"
         />
 
         <input
@@ -43,13 +45,14 @@ const AddBook = () => {
           placeholder="Book author"
           name="author"
           required
+          className="bookInput bookAuthor"
         />
 
-        <button type="submit">
+        <button type="submit" className="addButton">
           Add Book
         </button>
       </form>
-    </div>
+    </section>
   );
 };
 
