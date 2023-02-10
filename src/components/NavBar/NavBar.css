@@ -17,6 +17,7 @@
   text-decoration: none;
   text-transform: uppercase;
   opacity: 0.5;
+  user-select: none;
 }
 
 .navLink.active {
