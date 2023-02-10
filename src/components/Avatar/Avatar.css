@@ -1,4 +1,5 @@
 .avatar {
+  margin-inline-start: auto;
   color: var(--azure);
   background-color: transparent;
   padding: 0.875rem;
