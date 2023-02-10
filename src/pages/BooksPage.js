@@ -1,5 +1,5 @@
 import React from 'react';
-import BooksList from '../components/BooksList';
+import BooksList from '../components/BooksList/BooksList';
 import AddBook from '../components/AddBook/AddBook';
 
 const BooksPage = () => (
