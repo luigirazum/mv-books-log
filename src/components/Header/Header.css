@@ -5,5 +5,5 @@ header {
   color: var(--black);
   background-color: var(--white);
   padding: 1.5em 2.5em;
-  border-bottom: 1px solid var(--bc-e8e8e8);
+  border-bottom: var(--common-border);
 }

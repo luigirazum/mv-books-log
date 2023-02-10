@@ -4,7 +4,7 @@
   background-color: transparent;
   padding: 0.875rem;
   outline: none;
-  border: 1px solid var(--bc-e8e8e8);
+  border: var(--common-border);
   border-radius: 50%;
   cursor: pointer;
 }
