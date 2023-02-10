@@ -6,10 +6,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
+/* Roboto Slab */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
+
 :root {
   /* Fonts */
   /* families */
   --ff-montserrat: 'Montserrat', sans-serif;
+  --ff-robotoslab: 'Roboto Slab', serif;
 
   /* weigths */
   --fw-thin: 300;
@@ -17,18 +25,21 @@
   --fw-medium: 500;
   --fw-semibold: 600;
   --fw-bold: 700;
+  --fw-extrabold: 800;
 
   /* Color pallete */
   --azure: #0290ff;
   --white: #fff;
   --white-fff: #fafafa;
   --pale-grey: #f5f6fa;
+  --grey-888: #888;
+  --grey-c4c4c4: #c4c4c4;
   --black: #000;
   --black-two: #121212;
   --black-5: rgba(0, 0, 0, 0.05);
 
   /* borders */
-  --bc-e8e8e8: #e8e8e8;
+  --common-border: 1px solid #e8e8e8;
 }
 
 /* Add some general resets */
@@ -41,13 +52,11 @@
 }
 
 body {
-  padding: 3.5rem 4rem;
+  padding: 2.5rem;
   background-color: var(--pale-grey);
 }
 
 .bookslog {
-  width: 90%;
-  margin: 0 auto;
   padding: 0 0 8%;
   border-radius: 4px;
   box-shadow: 0 0 60px 0 var(--black-5);
