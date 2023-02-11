@@ -9,6 +9,12 @@
   cursor: pointer;
 }
 
+.avatar:hover {
+  color: var(--medium-blue);
+  background-color: var(--black-5);
+  border: var(--hover-azure-border);
+}
+
 span {
   display: inline-block;
   display: flex;
