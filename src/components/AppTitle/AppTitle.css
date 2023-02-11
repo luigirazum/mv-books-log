@@ -10,3 +10,7 @@
 .appTitle:hover {
   color: var(--grey-888);
 }
+
+.appTitle:active {
+  color: var(--black-two);
+}
