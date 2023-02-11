@@ -1,0 +1,33 @@
+.avatar {
+  margin-inline-start: auto;
+  color: var(--azure);
+  background-color: transparent;
+  padding: 0.875rem;
+  outline: none;
+  border: var(--common-border);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.avatar:hover {
+  color: var(--medium-blue);
+  background-color: var(--black-5);
+  border: var(--hover-azure-border);
+}
+
+.avatar:active {
+  color: var(--white);
+  border: var(--hover-border);
+  background-color: var(--black-two);
+  opacity: 0.8;
+}
+
+span {
+  display: inline-block;
+  display: flex;
+}
+
+svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}

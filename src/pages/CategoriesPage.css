@@ -1,0 +1,35 @@
+.title {
+  font-family: var(--ff-montserrat);
+  font-weight: var(--fw-bold);
+  font-size: 1.25rem;
+}
+
+.checkStatusButton {
+  font-family: var(--ff-montserrat);
+  font-weight: var(--fw-thin);
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--azure);
+  border: var(--clear-border);
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 0.5rem 1.28rem;
+  margin-block: 1rem;
+}
+
+.checkStatusButton:hover {
+  color: var(--azure);
+  background-color: var(--black-5);
+  border: var(--hover-border);
+}
+
+.checkStatusButton:active {
+  color: var(--white);
+  background-color: var(--black-two);
+  opacity: 0.8;
+}
+
+.underConstruction {
+  font-family: var(--ff-robotoslab);
+  color: var(--black-two);
+}

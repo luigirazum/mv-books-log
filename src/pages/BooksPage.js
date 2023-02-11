@@ -1,12 +1,12 @@
 import React from 'react';
-import BooksList from '../components/BooksList';
-import AddBook from '../components/AddBook';
+import BooksList from '../components/BooksList/BooksList';
+import AddBook from '../components/AddBook/AddBook';
 
 const BooksPage = () => (
-  <div>
+  <>
     <BooksList />
     <AddBook />
-  </div>
+  </>
 );
 
 export default BooksPage;

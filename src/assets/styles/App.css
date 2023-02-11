@@ -1,8 +1,6 @@
-/* Add some general resets */
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  padding: 2.5em;
 }

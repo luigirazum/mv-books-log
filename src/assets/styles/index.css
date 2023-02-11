@@ -1,0 +1,75 @@
+/* shared styles */
+
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* Roboto Slab */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
+
+:root {
+  /* Fonts */
+
+  /* families */
+  --ff-montserrat: 'Montserrat', sans-serif;
+  --ff-robotoslab: 'Roboto Slab', serif;
+
+  /* weigths */
+  --fw-thin: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+
+  /* Color pallete */
+  --azure: #0091ff;
+  --azure-hsl: hsl(206, 100%, 50%);
+  --azure-blue: #4386bf;
+  --white: #fff;
+  --white-fff: #fafafa;
+  --pale-grey: #f5f6fa;
+  --grey-888: #888;
+  --grey-c4c4c4: #c4c4c4;
+  --black: #000;
+  --black-two: #121212;
+  --black-5: rgba(0, 0, 0, 0.05);
+  --medium-blue: #307bbe;
+  --gradient-blue: #379cf6;
+  --progress-color: #e8e8e8;
+
+  /* borders */
+  --common-border: 1px solid #e8e8e8;
+  --clear-border: 1px solid transparent;
+  --hover-border: 1px solid var(--black-two);
+  --hover-azure-border: 1px solid var(--azure);
+}
+
+/* Add some general resets */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2.5rem;
+  background-color: var(--pale-grey);
+}
+
+.bookslog {
+  padding: 0 0 8%;
+  border-radius: 4px;
+  box-shadow: 0 0 60px 0 var(--black-5);
+  background-color: var(--white-fff);
+}

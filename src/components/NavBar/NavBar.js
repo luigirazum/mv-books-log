@@ -1,5 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import AppTitle from '../AppTitle/AppTitle';
+import Avatar from '../Avatar/Avatar';
+import './NavBar.css';
 
 const NavBar = () => {
   const links = [
@@ -19,7 +22,7 @@ const NavBar = () => {
     const { id, path, text } = link;
     return (
       <li key={id}>
-        <NavLink to={path} end>
+        <NavLink to={path} end className="navLink">
           {text}
         </NavLink>
       </li>
@@ -27,11 +30,15 @@ const NavBar = () => {
   });
 
   return (
-    <nav>
-      <ul>
-        {navLinks}
-      </ul>
-    </nav>
+    <>
+      <AppTitle />
+      <nav className="navBar">
+        <ul className="navLinks">
+          {navLinks}
+        </ul>
+      </nav>
+      <Avatar />
+    </>
   );
 };
 

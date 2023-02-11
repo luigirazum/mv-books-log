@@ -1,0 +1,40 @@
+.navBar {
+  font-family: var(--ff-montserrat);
+  font-weight: var(--fw-semibold);
+  font-size: 0.813rem;
+}
+
+.navLinks {
+  display: flex;
+  flex-grow: 1;
+  gap: 2.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.navLink {
+  color: var(--black-two);
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 0.5;
+  user-select: none;
+}
+
+.navLink:hover {
+  color: var(--azure);
+}
+
+.navLink.active {
+  color: var(--azure);
+  opacity: 1;
+}
+
+.navLink:active,
+.navLink.active:active {
+  color: var(--black-two);
+  opacity: 1;
+}
+
+.navLink.active:hover {
+  color: var(--grey-888);
+}
