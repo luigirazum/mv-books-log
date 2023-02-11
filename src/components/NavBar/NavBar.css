@@ -24,6 +24,12 @@
   color: var(--azure);
 }
 
+.navLink:active,
+.navLink.active:active {
+  color: var(--black-two);
+  opacity: 1;
+}
+
 .navLink.active {
   color: var(--azure);
   opacity: 1;
