@@ -6,3 +6,7 @@
   text-decoration: none;
   user-select: none;
 }
+
+.appTitle:hover {
+  color: var(--grey-888);
+}
