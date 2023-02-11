@@ -89,6 +89,11 @@
   border: none;
 }
 
+.biActionButton:hover {
+  color: var(--black-two);
+  text-decoration: underline var(--medium-blue);
+}
+
 .bpIconContainer {
   --progressContainer: 5.625rem;
   display: flex;
@@ -168,6 +173,13 @@
   color: var(--white);
   background-color: var(--azure);
   padding: 0.5rem 1.28rem;
-  border: none;
+  border: var(--clear-border);
+  border-radius: 3px;
   margin-block-start: 1.25rem;
+}
+
+.bchUpdateButton:hover {
+  color: var(--azure);
+  background-color: var(--black-5);
+  border: var(--hover-border);
 }
