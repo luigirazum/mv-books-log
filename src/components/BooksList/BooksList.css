@@ -12,4 +12,16 @@
   background-color: var(--white);
   border: var(--common-border);
   border-radius: 4px;
+  transition: transform 150ms ease-in 200ms,
+              background-color 200ms step-end;
+}
+
+.bookItem:hover {
+  border: var(--hover-border);
+  transform: scale(1.015);
+  background-color: var(--pale-grey);
+}
+
+.bookItem:hover .bpIcon .bpIconInner {
+  background-color: var(--pale-grey);
 }
