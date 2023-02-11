@@ -46,6 +46,8 @@
 
   /* borders */
   --common-border: 1px solid #e8e8e8;
+  --clear-border: 1px solid transparent;
+  --hover-border: 1px solid var(--black-two);
 }
 
 /* Add some general resets */
