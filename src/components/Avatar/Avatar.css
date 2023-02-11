@@ -15,6 +15,13 @@
   border: var(--hover-azure-border);
 }
 
+.avatar:active {
+  color: var(--white);
+  border: var(--hover-border);
+  background-color: var(--black-two);
+  opacity: 0.8;
+}
+
 span {
   display: inline-block;
   display: flex;
