@@ -12,8 +12,9 @@
   background-color: var(--white);
   border: var(--common-border);
   border-radius: 4px;
-  transition: transform 150ms ease-in 200ms,
-              background-color 200ms step-end;
+  transition:
+    transform 150ms ease-in 200ms,
+    background-color 200ms step-end;
 }
 
 .bookItem:hover {

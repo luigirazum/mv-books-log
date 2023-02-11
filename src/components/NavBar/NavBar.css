@@ -1,7 +1,7 @@
 .navBar {
- font-family: var(--ff-montserrat);
- font-weight: var(--fw-semibold);
- font-size: 0.813rem;
+  font-family: var(--ff-montserrat);
+  font-weight: var(--fw-semibold);
+  font-size: 0.813rem;
 }
 
 .navLinks {
@@ -24,13 +24,14 @@
   color: var(--azure);
 }
 
-.navLink:active, .navLink.active:active {
-  color: var(--black-two);
+.navLink.active {
+  color: var(--azure);
   opacity: 1;
 }
 
-.navLink.active {
-  color: var(--azure);
+.navLink:active,
+.navLink.active:active {
+  color: var(--black-two);
   opacity: 1;
 }
 
