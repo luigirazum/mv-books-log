@@ -1,0 +1,15 @@
+.booksList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.938rem;
+  background-color: transparent;
+  list-style: none;
+}
+
+.bookItem {
+  display: flex;
+  padding: 2rem 1.688rem 1.75rem;
+  background-color: var(--white);
+  border: var(--common-border);
+  border-radius: 4px;
+}

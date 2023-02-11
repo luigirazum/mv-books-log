@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import Book from './Book';
+import Book from '../Book/Book';
+import './BooksList.css';
 
 const BooksList = () => {
   const books = useSelector((state) => (state.books.library));
@@ -9,14 +10,14 @@ const BooksList = () => {
     const { id } = book;
 
     return (
-      <li key={id}>
+      <li key={id} className="bookItem">
         <Book bookInfo={book} />
       </li>
     );
   });
 
   return (
-    <ul>
+    <ul className="booksList">
       {bookList}
     </ul>
   );
