@@ -20,6 +20,15 @@
   user-select: none;
 }
 
+.navLink:hover {
+  color: var(--azure);
+}
+
 .navLink.active {
+  color: var(--azure);
   opacity: 1;
+}
+
+.navLink.active:hover {
+  color: var(--grey-888);
 }
