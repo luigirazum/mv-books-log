@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 /* Roboto Slab */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
@@ -28,7 +29,9 @@
   --fw-extrabold: 800;
 
   /* Color pallete */
-  --azure: #0290ff;
+  --azure: #0091ff;
+  --azure-hsl: hsl(206, 100%, 50%);
+  --azure-blue: #4386bf;
   --white: #fff;
   --white-fff: #fafafa;
   --pale-grey: #f5f6fa;
@@ -37,6 +40,9 @@
   --black: #000;
   --black-two: #121212;
   --black-5: rgba(0, 0, 0, 0.05);
+  --medium-blue: #307bbe;
+  --gradient-blue: #379cf6;
+  --progress-color: #e8e8e8;
 
   /* borders */
   --common-border: 1px solid #e8e8e8;
