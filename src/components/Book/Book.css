@@ -183,3 +183,9 @@
   background-color: var(--black-5);
   border: var(--hover-border);
 }
+
+.bchUpdateButton:active {
+  color: var(--white);
+  background-color: var(--black-two);
+  opacity: 0.8;
+}

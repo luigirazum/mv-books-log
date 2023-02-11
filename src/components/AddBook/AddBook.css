@@ -31,8 +31,16 @@
   color: var(--black-two);
 }
 
+.bookInput:focus-visible {
+  border: var(--hover-azure-border);
+}
+
 .bookInput::placeholder {
   color: var(--grey-c4c4c4);
+}
+
+.bookInput:focus-visible::placeholder {
+  color: var(--black-two);
 }
 
 .bookTitle {
@@ -56,5 +64,17 @@
   color: var(--white);
   background-color: var(--azure);
   border-radius: 3px;
-  border: none;
+  border: var(--clear-border);
+}
+
+.addButton:hover {
+  color: var(--azure);
+  background-color: var(--black-5);
+  border: var(--hover-border);
+}
+
+.addButton:active {
+  color: var(--white);
+  background-color: var(--black-two);
+  opacity: 0.8;
 }
