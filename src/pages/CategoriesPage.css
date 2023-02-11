@@ -23,6 +23,12 @@
   border: var(--hover-border);
 }
 
+.checkStatusButton:active {
+  color: var(--white);
+  background-color: var(--black-two);
+  opacity: 0.8;
+}
+
 .underConstruction {
   font-family: var(--ff-robotoslab);
   color: var(--black-two);
