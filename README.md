@@ -19,6 +19,7 @@ I'm building this application to learn how to use React/Redux.
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [� Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Available Scripts](#available-scripts)
@@ -71,14 +72,14 @@ This project was bootstrapped with:
 - *DOM manipulation.*
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-<!--
+
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- <a href="https://luigirazum.github.io/mv-books-log/" target="_blank" rel="noopener noreferrer">BooksLog App - Live Demo (coming soon...)</a>
+- <a href="https://bookslog.onrender.com/" target="_blank" rel="noopener noreferrer">BooksLog App - Live Demo</a>
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
--->
+
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
